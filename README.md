@@ -4,14 +4,14 @@
 
 - npm is a package manager for JavaScript
 - Modules - The individual files containing reusable code are called as Modules
-  ![1]()
+  ![1](https://github.com/abhinavg916/npm-guide/blob/master/Resources/1.png)
 - Package - It is a directory that contains modules with a special file `package.json` is called as Package
   `package.json` contains the meta data about the package.
-  ![2]()
+  ![2](https://github.com/abhinavg916/npm-guide/blob/master/Resources/2.png)
 - It is way/medium/platform to share code with other developers and reuse the code to easily manage the different versions of code by other developers
 - It also keeps the uniformity between developers by regular updates
 - It maintains and handles compatibility changes very well
-  ![3]()
+  ![3](https://github.com/abhinavg916/npm-guide/blob/master/Resources/3.png)
 
 ---
 
