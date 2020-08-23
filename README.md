@@ -57,7 +57,7 @@ npm install update
 
 ---
 
-## package.json
+## Package.json File
 
 - It is recommeded to add in the project folder
 - Benefits:
@@ -90,7 +90,7 @@ npm install update
 
 ---
 
-## package.json defaults
+## Setting up Package.json Defaults
 
 - To set defaults like author, license, etc.
 
@@ -201,8 +201,52 @@ npm install lodash --save-dev
   }
 }
 ```
-* From above, moment is the production dependency and lodash is development dependency
+
+- From above, moment is the production dependency and lodash is development dependency
 
 ---
 
-##
+## Uninstalling local packages
+
+- To uninstall the local packages by `npm uninstall <package-name>` but this not remove the dependency from the `package.json`
+
+```
+npm uninstall moment
+```
+
+- To remove the dependency as well with the package
+
+```
+npm uninstall moment --save
+```
+
+- To remove dev dependency
+
+```
+npm uninstall lodash --save-dev
+```
+
+- **package.json**
+
+```
+{
+  "name": "npm-implementation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhinav",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {}
+}
+```
+
+---
+
+## Installing Global Packages
+
+-
