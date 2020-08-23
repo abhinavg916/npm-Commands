@@ -8,5 +8,11 @@
   "author": "Abhinav",
   "license": "ISC",
   "keywords": [],
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.20"
+  }
 }
