@@ -1,4 +1,5 @@
 # NPM Guide
+![NPM Cover](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1200px-Npm-logo.svg.png)
 
 ## Introduction
 
