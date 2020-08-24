@@ -57,7 +57,7 @@ npm install update
 
 ---
 
-## Package.json File
+## `package.json` File
 
 - It is recommeded to add in the project folder
 - Benefits:
@@ -90,7 +90,7 @@ npm install update
 
 ---
 
-## Setting up Package.json Defaults
+## Setting up `package.json` Defaults
 
 - To set defaults like author, license, etc.
 
@@ -206,7 +206,7 @@ npm install lodash --save-dev
 
 ---
 
-## Uninstalling local packages
+## Uninstalling Local Packages
 
 - To uninstall the local packages by `npm uninstall <package-name>` but this not remove the dependency from the `package.json`
 
