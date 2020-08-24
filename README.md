@@ -449,7 +449,7 @@ npm prune
 
 ## Shortcuts
 
-- To create package with default values,
+- To create package with default values
 
 ```
 Before: npm init --yes
@@ -485,4 +485,44 @@ After: npm i moment -D
 ---
 
 ## npm Scripts
-* 
+
+- To run the application
+
+```
+node app.js
+```
+
+- Writing script to do the task automatically, replace `test` in scripts with the your keyword along with the command to execute
+- **package.json**
+
+```
+{
+  "name": "npm-implementation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node App.js"
+  },
+  "author": "Abhinav",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {}
+}
+```
+
+```
+npm start
+```
+
+- Scripts help in fasten and easier the work for developer
+
+---
+
+# Author
+
+- Name - Abhinav
+- GitHub - [github.com/abhinavg916](https://github.com/abhinavg916)
