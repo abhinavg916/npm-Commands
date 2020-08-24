@@ -253,3 +253,8 @@ npm uninstall lodash --save-dev
 ```
 npm install moment -g
 ```
+
+## Uninstalling Global Packages
+```
+npm uninstall moment -g
+```
