@@ -448,3 +448,41 @@ npm prune
 ---
 
 ## Shortcuts
+
+- To create package with default values,
+
+```
+Before: npm init --yes
+After: npm init -y
+```
+
+- To install package locally
+
+```
+Before: npm install lodash
+After: npm i lodash
+```
+
+- To save the package installed in the `package.json` during installation
+
+```
+Before: npm i lodash --save
+After: npm i lodash -S
+```
+
+- To save the package as dev dependency
+
+```
+Before: npm install moment --save-dev
+After: npm i moment -D
+```
+
+- Miscellaneuous
+  - `--global` to `-g`
+  - `npm -version` to `npm -v`
+- More Shortcuts at - [NPM Shortcuts](https://docs.npmjs.com/misc/config)
+
+---
+
+## npm Scripts
+* 
