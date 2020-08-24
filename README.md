@@ -57,7 +57,7 @@ npm install update
 
 ---
 
-## `package.json` File
+## package.json File
 
 - It is recommeded to add in the project folder
 - Benefits:
@@ -90,7 +90,7 @@ npm install update
 
 ---
 
-## Setting up `package.json` Defaults
+## Setting up package.json Defaults
 
 - To set defaults like author, license, etc.
 
@@ -387,7 +387,7 @@ npm install lodash@4 --save
 
 ---
 
-## Installing From `package.json`
+## Installing From package.json
 
 - To install the packages through `package.json` is done using
 
