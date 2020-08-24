@@ -389,4 +389,13 @@ npm install lodash@4 --save
 
 ## Installing from `package.json`
 
--
+- To install the packages through `package.json` is done using
+```
+npm install
+```
+- With `^` symbol in front of package name like `"lodash": "^4.17.20"` lets the npm to install the latest minor and patch version but keeping the specific major version
+- With `~` symbol in front of pacakge name like `"lodash": "~4.17.20"` lets the npm to install the latest patch version only but keeping the specific major and minor version 
+- With no symbol in front of pacakge name like `"lodash": "4.17.20"` lets the npm to install the complete exact specific version
+- With `*` symbol in front of pacakge name like `"lodash": "*"` lets the npm to install the current latest version
+
+---
