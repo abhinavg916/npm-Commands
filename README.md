@@ -428,7 +428,7 @@ npm update
 npm update -g
 ```
 
-- To update the latest npm then
+- To update the latest npm then (but run cmd with adminstrative privileges)
 
 ```
 npm install npm@latest -g
@@ -437,3 +437,14 @@ npm install npm@latest -g
 ---
 
 ## npm Prune
+
+- To remove the unused dependency, on seeing the extraneous packages through `npm list`
+
+```
+npm list
+npm prune
+```
+
+---
+
+## Shortcuts
