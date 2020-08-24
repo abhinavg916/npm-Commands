@@ -249,4 +249,7 @@ npm uninstall lodash --save-dev
 
 ## Installing Global Packages
 
--
+- Some packages like grunt and gulp need to be used from the command line and in such scenarios package is preferred to be installed globally. So that it's binaries end up in the PATH environmnet variable. But after the installation the package is not found to be __node_modules__ that because it's not locally 
+```
+npm install moment -g
+```
