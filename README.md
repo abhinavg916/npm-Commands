@@ -249,12 +249,33 @@ npm uninstall lodash --save-dev
 
 ## Installing Global Packages
 
-- Some packages like grunt and gulp need to be used from the command line and in such scenarios package is preferred to be installed globally. So that it's binaries end up in the PATH environmnet variable. But after the installation the package is not found to be __node_modules__ that because it's not locally 
+- Some packages like grunt and gulp need to be used from the command line and in such scenarios package is preferred to be installed globally. So that it's binaries end up in the PATH environmnet variable. But after the installation the package is not found to be **node_modules** that because it's not locally
+
 ```
 npm install moment -g
 ```
 
 ## Uninstalling Global Packages
+
 ```
 npm uninstall moment -g
 ```
+
+## Listing Packages
+- To view the list of all locally and globally installed packages by
+- Locally
+```
+npm list
+```
+- Global
+```
+npm list --global true
+```
+- NOTE: All the global packages are stored in `C:\Users\<Username>\AppData\Roaming\npm\node_modules`
+- To limit the depth view of the list on console
+```
+npm list --global true --depth 1
+npm list --depth 1
+```
+- 1 means immediate dependencies of the package, not the full tree
+- 0 means no dependencies of the package is not shown, only the package name is shown
