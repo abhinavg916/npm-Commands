@@ -255,27 +255,138 @@ npm uninstall lodash --save-dev
 npm install moment -g
 ```
 
+---
+
 ## Uninstalling Global Packages
 
 ```
 npm uninstall moment -g
 ```
 
+---
+
 ## Listing Packages
+
 - To view the list of all locally and globally installed packages by
 - Locally
+
 ```
 npm list
 ```
+
 - Global
+
 ```
 npm list --global true
 ```
+
 - NOTE: All the global packages are stored in `C:\Users\<Username>\AppData\Roaming\npm\node_modules`
 - To limit the depth view of the list on console
+
 ```
 npm list --global true --depth 1
 npm list --depth 1
 ```
+
 - 1 means immediate dependencies of the package, not the full tree
 - 0 means no dependencies of the package is not shown, only the package name is shown
+
+---
+
+## npm Versioning
+
+- It is important to know the working of versioning with the packages
+- Semantic Versioning is a specification where a version is represented by three numbers that mean the same thing for every developer.
+- For Example: `"lodash": "4.16.1"`
+  - 4 represents the major version number
+  - 16 represents the minor version number
+  - 1 represents the patch version number
+- Patch version number is updated when a bug is fixed or performance improvement
+- Minor version number is updated when a new feature is introduced and does not break any existing functionality
+- Major version number is updated when there's a break in the existing functionality
+- To install a specific version of a package, `@` symbol is used
+
+```
+npm install lodash@3.3.0 --save
+```
+
+- **package.json**
+
+```
+{
+  "name": "npm-implementation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhinav",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "lodash": "^3.3.0"
+  },
+  "devDependencies": {}
+}
+```
+
+- To install the latest patch version but specific major and minor version then
+
+```
+npm install lodash@4.14 --save
+```
+
+- **package.json**
+
+```
+{
+  "name": "npm-implementation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhinav",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.14.2"
+  },
+  "devDependencies": {}
+}
+```
+
+- Similarly, to install the latest minor and patch version but specific major version then
+
+```
+npm install lodash@4 --save
+```
+
+- **package.json**
+
+```
+{
+  "name": "npm-implementation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhinav",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {}
+}
+```
+
+---
+
+## Installing from `package.json`
+
+-
