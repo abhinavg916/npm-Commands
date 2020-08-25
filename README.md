@@ -69,7 +69,7 @@ npm install update
   ```
 - **package.json**
 
-```
+```javascript
 {
   "name": "npm-implementation",
   "version": "1.0.0",
@@ -103,7 +103,7 @@ npm init --yes
 
 - **package.json**
 
-```
+```javascript
 {
   "name": "npm-implementation",
   "version": "1.0.0",
@@ -182,7 +182,7 @@ npm install lodash --save-dev
 - By doing this, it creates a separate dependencie in `package.json` as `devDependencies`
 - **package.json**
 
-```
+```javascript
 {
   "name": "npm-implementation",
   "version": "1.0.0",
@@ -229,7 +229,7 @@ npm uninstall lodash --save-dev
 
 - **package.json**
 
-```
+```javascript
 {
   "name": "npm-implementation",
   "version": "1.0.0",
@@ -313,7 +313,7 @@ npm install lodash@3.3.0 --save
 
 - **package.json**
 
-```
+```javascript
 {
   "name": "npm-implementation",
   "version": "1.0.0",
@@ -340,7 +340,7 @@ npm install lodash@4.14 --save
 
 - **package.json**
 
-```
+```javascript
 {
   "name": "npm-implementation",
   "version": "1.0.0",
@@ -367,7 +367,7 @@ npm install lodash@4 --save
 
 - **package.json**
 
-```
+```javascript
 {
   "name": "npm-implementation",
   "version": "1.0.0",
@@ -496,7 +496,7 @@ node app.js
 - Writing script to do the task automatically, replace `test` in scripts with the your keyword along with the command to execute
 - **package.json**
 
-```
+```javascript
 {
   "name": "npm-implementation",
   "version": "1.0.0",
