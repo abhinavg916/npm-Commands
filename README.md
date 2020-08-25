@@ -1,5 +1,25 @@
 # NPM Guide
+
 ![NPM Cover](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1200px-Npm-logo.svg.png)
+
+## Contents
+
+- [Introduction](#introduction)
+- [Getting npm](#getting-npm)
+- [npm Help](#npm-help)
+- [package.json File](#package.json-file)
+- [package.json Defaults](#package.json-defaults)
+- [Installing Local Packages](#installing-local-packages)
+- [Uninstalling Local Packages](#uninstalling-local-packages)
+- [Installing Global Packages](#installing-global-packages)
+- [Uninstalling Global Packages](#uninstalling-global-packages)
+- [Listing Packages](#listing-packages)
+- [npm Versioning](#npm-versioning)
+- [Installing from package.json](#installing-from-package.json)
+- [Updating Packages](#updating-packages)
+- [npm Prune](#npm-prune)
+- [npm Shortcuts](#npm-shortcuts)
+- [npm Scripts](#npm-scripts)
 
 ## Introduction
 
@@ -31,6 +51,10 @@ node -v
 ```
 npm -v
 ```
+
+---
+
+## npm Help
 
 - All commands of npm
 
@@ -91,7 +115,7 @@ npm install update
 
 ---
 
-## Setting up package.json Defaults
+## package.json Defaults
 
 - To set defaults like author, license, etc.
 
@@ -448,7 +472,7 @@ npm prune
 
 ---
 
-## Shortcuts
+## npm Shortcuts
 
 - To create package with default values
 
