@@ -89,7 +89,7 @@ npm install update
   - Lets to manage dependencies like Working on Node project that requires Express then it is must to specify Express and its version
   - Lets to add Scripts - Helps with initial project build
   ```
-  npm int
+  npm init
   ```
 - **package.json**
 
