@@ -110,7 +110,7 @@ npm install update
 - To skip the question during `npm init`, we use
 
 ```
-`npm init --yes`
+npm init --yes
 ```
 
 ---
