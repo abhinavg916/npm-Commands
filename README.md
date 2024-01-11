@@ -3,27 +3,27 @@
 ![NPM Cover](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1200px-Npm-logo.svg.png)
 
 - [NPM Guide](#npm-guide)
-  - [Introduction](#introduction)
-  - [Getting npm](#getting-npm)
-  - [npm Help](#npm-help)
-  - [package.json File](#packagejson-file)
-  - [package.json Defaults](#packagejson-defaults)
-  - [Installing Local Packages](#installing-local-packages)
-  - [Uninstalling Local Packages](#uninstalling-local-packages)
-  - [Installing Global Packages](#installing-global-packages)
-  - [Uninstalling Global Packages](#uninstalling-global-packages)
-  - [Listing Packages](#listing-packages)
-  - [npm Versioning](#npm-versioning)
-  - [Installing From package.json](#installing-from-packagejson)
-  - [Updating Packages](#updating-packages)
-  - [npm Prune](#npm-prune)
-  - [npm Shortcuts](#npm-shortcuts)
-  - [npm Scripts](#npm-scripts)
+    - [Introduction](#introduction)
+    - [Getting npm](#getting-npm)
+    - [npm Help](#npm-help)
+    - [package.json File](#packagejson-file)
+    - [package.json Defaults](#packagejson-defaults)
+    - [Installing Local Packages](#installing-local-packages)
+    - [Uninstalling Local Packages](#uninstalling-local-packages)
+    - [Installing Global Packages](#installing-global-packages)
+    - [Uninstalling Global Packages](#uninstalling-global-packages)
+    - [Listing Packages](#listing-packages)
+    - [npm Versioning](#npm-versioning)
+    - [Installing From package.json](#installing-from-packagejson)
+    - [Updating Packages](#updating-packages)
+    - [npm Prune](#npm-prune)
+    - [npm Shortcuts](#npm-shortcuts)
+    - [npm Scripts](#npm-scripts)
   - [Author](#author)
 
 ---
 
-## Introduction
+### Introduction
 
 - npm is a package manager for JavaScript
 - Modules - The individual files containing reusable code are called as Modules
@@ -36,7 +36,7 @@
 - It maintains and handles compatibility changes very well
   ![3](https://github.com/abhinavg916/npm-guide/blob/master/Resources/3.png)
 
-## Getting npm
+### Getting npm
 
 - npm is shipped with NodeJs
 - Download and Install NodeJs (LTS)
@@ -52,7 +52,7 @@ node -v
 npm -v
 ```
 
-## npm Help
+### npm Help
 
 - All commands of npm
 
@@ -78,7 +78,7 @@ npm help-search update
 npm install update
 ```
 
-## package.json File
+### package.json File
 
 - It is recommeded to add in the project folder
 - Benefits:
@@ -109,7 +109,7 @@ npm install update
 npm init --yes
 ```
 
-## package.json Defaults
+### package.json Defaults
 
 - To set defaults like author, license, etc.
 
@@ -151,7 +151,7 @@ npm config delete init-author-name
 npm init --yes
 ```
 
-## Installing Local Packages
+### Installing Local Packages
 
 - To install packages locally on the system by `npm install <package-name>`
 - NOTE: Be inside the project folder before installing
@@ -221,7 +221,7 @@ npm install lodash --save-dev
 
 - From above, moment is the production dependency and lodash is development dependency
 
-## Uninstalling Local Packages
+### Uninstalling Local Packages
 
 - To uninstall the local packages by `npm uninstall <package-name>` but this not remove the dependency from the `package.json`
 
@@ -260,7 +260,7 @@ npm uninstall lodash --save-dev
 }
 ```
 
-## Installing Global Packages
+### Installing Global Packages
 
 - Some packages like grunt and gulp need to be used from the command line and in such scenarios package is preferred to be installed globally. So that it's binaries end up in the PATH environmnet variable. But after the installation the package is not found to be **node_modules** that because it's not locally
 
@@ -268,13 +268,13 @@ npm uninstall lodash --save-dev
 npm install moment -g
 ```
 
-## Uninstalling Global Packages
+### Uninstalling Global Packages
 
 ```
 npm uninstall moment -g
 ```
 
-## Listing Packages
+### Listing Packages
 
 - To view the list of all locally and globally installed packages by
 - Locally
@@ -300,7 +300,7 @@ npm list --depth 1
 - 1 means immediate dependencies of the package, not the full tree
 - 0 means no dependencies of the package is not shown, only the package name is shown
 
-## npm Versioning
+### npm Versioning
 
 - It is important to know the working of versioning with the packages
 - Semantic Versioning is a specification where a version is represented by three numbers that mean the same thing for every developer.
@@ -392,7 +392,7 @@ npm install lodash@4 --save
 }
 ```
 
-## Installing From package.json
+### Installing From package.json
 
 - To install the packages through `package.json` is done using
 
@@ -405,7 +405,7 @@ npm install
 - With `*` symbol in front of pacakge name like `"lodash": "*"` lets the npm to install the current latest version
 - With no symbol in front of pacakge name like `"lodash": "4.17.20"` lets the npm to install the complete exact specific version
 
-## Updating Packages
+### Updating Packages
 
 - To update the packages
 
@@ -437,7 +437,7 @@ npm update -g
 npm install npm@latest -g
 ```
 
-## npm Prune
+### npm Prune
 
 - To remove the unused dependency, on seeing the extraneous packages through `npm list`
 
@@ -446,7 +446,7 @@ npm list
 npm prune
 ```
 
-## npm Shortcuts
+### npm Shortcuts
 
 - To create package with default values
 
@@ -481,7 +481,7 @@ After: npm i moment -D
   - `npm -version` to `npm -v`
 - More Shortcuts at - [NPM Shortcuts](https://docs.npmjs.com/misc/config)
 
-## npm Scripts
+### npm Scripts
 
 - To run the application
 
