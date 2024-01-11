@@ -2,24 +2,26 @@
 
 ![NPM Cover](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1200px-Npm-logo.svg.png)
 
-## Contents
+- [NPM Guide](#npm-guide)
+  - [Introduction](#introduction)
+  - [Getting npm](#getting-npm)
+  - [npm Help](#npm-help)
+  - [package.json File](#packagejson-file)
+  - [package.json Defaults](#packagejson-defaults)
+  - [Installing Local Packages](#installing-local-packages)
+  - [Uninstalling Local Packages](#uninstalling-local-packages)
+  - [Installing Global Packages](#installing-global-packages)
+  - [Uninstalling Global Packages](#uninstalling-global-packages)
+  - [Listing Packages](#listing-packages)
+  - [npm Versioning](#npm-versioning)
+  - [Installing From package.json](#installing-from-packagejson)
+  - [Updating Packages](#updating-packages)
+  - [npm Prune](#npm-prune)
+  - [npm Shortcuts](#npm-shortcuts)
+  - [npm Scripts](#npm-scripts)
+  - [Author](#author)
 
-- [Introduction](#introduction)
-- [Getting npm](#getting-npm)
-- [npm Help](#npm-help)
-- [package.json File](#package.json-file)
-- [package.json Defaults](#package.json-defaults)
-- [Installing Local Packages](#installing-local-packages)
-- [Uninstalling Local Packages](#uninstalling-local-packages)
-- [Installing Global Packages](#installing-global-packages)
-- [Uninstalling Global Packages](#uninstalling-global-packages)
-- [Listing Packages](#listing-packages)
-- [npm Versioning](#npm-versioning)
-- [Installing from package.json](#installing-from-package.json)
-- [Updating Packages](#updating-packages)
-- [npm Prune](#npm-prune)
-- [npm Shortcuts](#npm-shortcuts)
-- [npm Scripts](#npm-scripts)
+---
 
 ## Introduction
 
@@ -33,8 +35,6 @@
 - It also keeps the uniformity between developers by regular updates
 - It maintains and handles compatibility changes very well
   ![3](https://github.com/abhinavg916/npm-guide/blob/master/Resources/3.png)
-
----
 
 ## Getting npm
 
@@ -51,8 +51,6 @@ node -v
 ```
 npm -v
 ```
-
----
 
 ## npm Help
 
@@ -79,8 +77,6 @@ npm help-search update
 ```
 npm install update
 ```
-
----
 
 ## package.json File
 
@@ -112,8 +108,6 @@ npm install update
 ```
 npm init --yes
 ```
-
----
 
 ## package.json Defaults
 
@@ -156,8 +150,6 @@ npm config delete init-licese
 npm config delete init-author-name
 npm init --yes
 ```
-
----
 
 ## Installing Local Packages
 
@@ -229,8 +221,6 @@ npm install lodash --save-dev
 
 - From above, moment is the production dependency and lodash is development dependency
 
----
-
 ## Uninstalling Local Packages
 
 - To uninstall the local packages by `npm uninstall <package-name>` but this not remove the dependency from the `package.json`
@@ -270,8 +260,6 @@ npm uninstall lodash --save-dev
 }
 ```
 
----
-
 ## Installing Global Packages
 
 - Some packages like grunt and gulp need to be used from the command line and in such scenarios package is preferred to be installed globally. So that it's binaries end up in the PATH environmnet variable. But after the installation the package is not found to be **node_modules** that because it's not locally
@@ -280,15 +268,11 @@ npm uninstall lodash --save-dev
 npm install moment -g
 ```
 
----
-
 ## Uninstalling Global Packages
 
 ```
 npm uninstall moment -g
 ```
-
----
 
 ## Listing Packages
 
@@ -315,8 +299,6 @@ npm list --depth 1
 
 - 1 means immediate dependencies of the package, not the full tree
 - 0 means no dependencies of the package is not shown, only the package name is shown
-
----
 
 ## npm Versioning
 
@@ -410,8 +392,6 @@ npm install lodash@4 --save
 }
 ```
 
----
-
 ## Installing From package.json
 
 - To install the packages through `package.json` is done using
@@ -424,8 +404,6 @@ npm install
 - With `~` symbol in front of pacakge name like `"lodash": "~4.17.20"` lets the npm to install the latest patch version only but keeping the specific major and minor version
 - With `*` symbol in front of pacakge name like `"lodash": "*"` lets the npm to install the current latest version
 - With no symbol in front of pacakge name like `"lodash": "4.17.20"` lets the npm to install the complete exact specific version
-
----
 
 ## Updating Packages
 
@@ -459,8 +437,6 @@ npm update -g
 npm install npm@latest -g
 ```
 
----
-
 ## npm Prune
 
 - To remove the unused dependency, on seeing the extraneous packages through `npm list`
@@ -469,8 +445,6 @@ npm install npm@latest -g
 npm list
 npm prune
 ```
-
----
 
 ## npm Shortcuts
 
@@ -506,8 +480,6 @@ After: npm i moment -D
   - `--global` to `-g`
   - `npm -version` to `npm -v`
 - More Shortcuts at - [NPM Shortcuts](https://docs.npmjs.com/misc/config)
-
----
 
 ## npm Scripts
 
